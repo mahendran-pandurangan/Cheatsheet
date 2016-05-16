@@ -1,0 +1,88 @@
+
+#To get log between time frames : 
+grep '2016-01-27 17:\|2016-01-27 18' ship-methods-read-service.log
+
+#Get count of search keyword from a file : 
+grep -c 'searchKeyword' fileName.log
+
+#Get LineNumbers of search keyword from a file : 
+grep -o -b 'searchKeyword' fileName.log
+ 
+#Get 100 lines around the search keyword from a file : 
+grep -C '100' 'searchKeyword' fileName.log
+ 
+#Get 100 lines above the search keyword from a file : 
+grep -A '100' 'searchKeyword' fileName.log
+ 
+#Get 100 lines below the search keyword from a file : 
+grep -B '100' 'searchKeyword' fileName.log
+ 
+#Get some lines above and below the search keyword from a file : 
+grep -after-context=5 --before-context=10 'searchKeyword' fileName.log
+
+#Search for a string in a file : 
+grep 'searchKeyword' fileName.log
+ 
+#Search for a string in all file of similar format: (Eg : .log)
+grep 'searchKeyword' *.log
+ 
+#Search for a exact word in a file :
+grep -iw 'searchKeyword' fileName.log
+ 
+#Print extracted log in a file :
+grep 'searchKeyword' fileName.log > NewFileName.log
+ 
+#Recursive search : 
+grep -r 'searchKeyword' * > NewFileName.log
+ 
+#Invert search : 
+grep -v 'searchKeyword' * > NewFileName.log
+ 
+#Get count of number of match :
+grep -c 'searchKeyword' filename > NewFileName.loggrep -r 'searchKeyword' filename | wc -l
+ 
+#Display only filenames matching the pattern :
+grep -I 'searchKeyword' filename > NewFileName.log
+ 
+#Get Position of Matched keyword in a file :
+grep -o -b 'searchKeyword' filename > NewFileName.logo - match only string
+b - show position
+ 
+#Show line number of matched keyword :
+grep -n 'searchKeyword' filename > NewFileName.log
+ 
+#Show line number of matched keyword :
+grep -n 'searchKeyword' filename > NewFileName.log
+ 
+#Exact matched keyword :
+grep -rlw 'searchKeyword' filename > NewFileName.log
+ 
+#Lines having the keyword :
+grep -rl 'searchKeyword' filename > NewFileName.log
+ 
+##Secure Copy Commands
+#Secure Copy from server to local : (CDC-MAIN TO LOCAL)
+scp jbalakr@cdc-main-client00.bfd.walmart.com:/home/filename.log .
+ 
+#Secure Copy from server to local : (IP to LOCAL)
+scp userName@10.xx.xx.xx:/fileName .
+ 
+#Secure Copy file to server : (LOCAL to COMPUTE) 
+scp fileName app@10.242.XX.XX:/tmp/
+ 
+#Secure Copy folder to server : (LOCAL to COMPUTE) 
+scp -r fileName app@10.242.XX.XX:/tmp/
+
+#Command line Operations 
+Force delete a directory : 
+rm -rf folderName
+ 
+#List By Date/Reverse : 
+ls -ltr
+ 
+#Extract Jar File Content : 
+jar xf jarFileName
+ 
+#Extract Tar File Content : 
+tar -vxf tarFileName
+ 
