@@ -1,7 +1,8 @@
 #CHECK FOR DEPENDENCY 
  mvn dependency:tree|grep "platform:cache"
  
-#RUN SUITE TESTNG FILE
+#RUN SUITE TESTNG FILE USING MAVEN COMMAND
+mvn test -DsuiteXmlFile=testng.xml
 
 #RUN TEST WITH COMMAND LINE ARGUMENTS
 mvn  test -Denv=dev
