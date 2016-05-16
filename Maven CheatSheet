@@ -1,6 +1,9 @@
 #CHECK FOR DEPENDENCY 
  mvn dependency:tree|grep "platform:cache"
  
+#RUN SINGLE TEST FROM COMMAND LINE USING MAVEN 
+mvn test -Dtest=ClassName
+
 #RUN SUITE TESTNG FILE USING MAVEN COMMAND
 mvn test -DsuiteXmlFile=testng.xml
 
