@@ -22,6 +22,93 @@
       <h3>
 <a id="welcome-to-git-cheatsheet" class="anchor" href="#welcome-to-git-cheatsheet" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to Git CheatSheet</h3>
 
+<h3>
+<a id="setup" class="anchor" href="#setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Setup</h3>
+
+<p>Goto Terminal(For Mac)/Command Prompt(For Windows)</p>
+
+<p>Navigate to /Users/userDirectory
+1. Create .ssh directory (mkdir .ssh)
+2. Run this command to generate ssh keys from the .ssh directory 
+cd .ssh
+ssh-keygen -t rsa -C “”
+3. It might ask to enter the name of the file (default will be id_rsa), just press enter to proceed with the defaults. It will create two keys, private(id_rsa) and public(id_rsa.pub)
+4. Copy the public key (cat id_rsa.pub) 
+5. Goto GitHub-&gt;Login-&gt;Settings-&gt;SSH Keys-&gt;Add SSH Key -&gt; Name it and Save your SSH.
+6. You should receive an email once its added successfully.
+7. Try to clone any repository to verify.</p>
+
+<h3>
+<a id="general-git-commands-" class="anchor" href="#general-git-commands-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>General GIT Commands :</h3>
+
+<h3>
+<a id="cloning-git-repository-" class="anchor" href="#cloning-git-repository-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Cloning GIT Repository :</h3>
+
+<p>`git clone  </p>
+
+<p>This will clone the default branch set.</p>
+
+<h3>
+<a id="to-clone-specific-branch-" class="anchor" href="#to-clone-specific-branch-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>TO clone specific branch :</h3>
+
+<p>`git clone –b    </p>
+
+<h3>
+<a id="to-check-status-of-your-local-repository--uncommitted-changes" class="anchor" href="#to-check-status-of-your-local-repository--uncommitted-changes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>To check status of your local repository : (uncommitted changes)</h3>
+
+<p>`git status</p>
+
+<h3>
+<a id="to-see-which-branch-you-are-in" class="anchor" href="#to-see-which-branch-you-are-in" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>To see which branch you are in:</h3>
+
+<p>`git branch</p>
+
+<h3>
+<a id="to-add-all-your-uncommitted-fileschanges" class="anchor" href="#to-add-all-your-uncommitted-fileschanges" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>To add all your uncommitted files/changes:</h3>
+
+<p>`git add .</p>
+
+<h3>
+<a id="to-add-specific-uncommitted-files" class="anchor" href="#to-add-specific-uncommitted-files" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>To add specific uncommitted files:</h3>
+
+<p>`git add  </p>
+
+<h3>
+<a id="to-commit-added-files" class="anchor" href="#to-commit-added-files" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>To commit added files:</h3>
+
+<p>`git commit –m “Commit Message" </p>
+
+<h3>
+<a id="to-checkin-the-changes-into-git" class="anchor" href="#to-checkin-the-changes-into-git" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>To checkin the changes into GIT:</h3>
+
+<p>`git push origin </p>
+
+<h3>
+<a id="default--git-push-origin-master" class="anchor" href="#default--git-push-origin-master" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Default : git push origin master</h3>
+
+<p>`If you have just master branch, just git push should suffice. </p>
+
+<h3>
+<a id="to-checkout-from-git-before-pushing-the-code-into-git-repo-its-a-standard-practice-to-always-run-this-command-first-following-by-commit-and-push" class="anchor" href="#to-checkout-from-git-before-pushing-the-code-into-git-repo-its-a-standard-practice-to-always-run-this-command-first-following-by-commit-and-push" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>To checkout from GIT (Before pushing the code into GIT repo, its a standard practice to always run this command first, following by commit and push):</h3>
+
+<p>`git pull origin </p>
+
+<h3>
+<a id="default--git-pull-origin-master" class="anchor" href="#default--git-pull-origin-master" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Default : git pull origin master</h3>
+
+<p>`If you have just master branch, just git pull should suffice. </p>
+
+<h3>
+<a id="to-switch-between-branches-" class="anchor" href="#to-switch-between-branches-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>To switch between branches :</h3>
+
+<p>`git checkout </p>
+
+<h3>
+<a id="to-fork-repository--you-can-fork-any-git-repo-for-your-own-purpose-which-will-create-cloned-copy-under-your-username" class="anchor" href="#to-fork-repository--you-can-fork-any-git-repo-for-your-own-purpose-which-will-create-cloned-copy-under-your-username" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>To Fork repository : (You can fork any GIT repo for your own purpose, which will create cloned copy under your username)</h3>
+
+<p>Goto any repo in GIT and click “FORK"
+FYI – it is possible to merge back the forked repo with our changes to original repo.</p>
+
 <h4>
 <a id="delete-a-branch-from-commandline-" class="anchor" href="#delete-a-branch-from-commandline-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>DELETE A BRANCH FROM COMMANDLINE :</h4>
 
