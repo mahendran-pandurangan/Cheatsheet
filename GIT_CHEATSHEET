@@ -14,3 +14,64 @@ git add .
 git commit -m "Message"
 git push -u origin branchname
 
+Goto Terminal(For Mac)/Command Prompt(For Windows)
+
+Navigate to /Users/userDirectory
+1. Create .ssh directory (mkdir .ssh)
+2. Run this command to generate ssh keys from the .ssh directory 
+cd .ssh
+ssh-keygen -t rsa -C “<YOUR NAME For Identification – This will appear at the end of the SSH Key>”
+3. It might ask to enter the name of the file (default will be id_rsa), just press enter to proceed with the defaults. It will create two keys, private(id_rsa) and public(id_rsa.pub)
+4. Copy the public key (cat id_rsa.pub) 
+5. Goto GitHub->Login->Settings->SSH Keys->Add SSH Key -> Name it and Save your SSH.
+6. You should receive an email once its added successfully.
+7. Try to clone any repository to verify.
+
+General GIT Commands : 
+
+Cloning GIT Repository : 
+ git clone <SSH Clone URL of the project> 
+
+This will clone the default branch set.
+
+TO clone specific branch :
+git clone –b <branchName> <SSH Clone URL of the project>  
+
+
+To check status of your local repository : (uncommitted changes)
+git status
+
+To see which branch you are in:
+git branch
+
+To add all your uncommitted files/changes:
+git add .
+
+To add specific uncommitted files:
+git add <fileName1> <fileName2>
+
+
+To commit added files:
+git commit –m “Commit Message" 
+
+
+To checkin the changes into GIT:
+git push origin <branchName>
+
+Default : git push origin master
+If you have just master branch, just git push should suffice. 
+
+To checkout from GIT (Before pushing the code into GIT repo, its a standard practice to always run this command first, following by commit and push): 
+git pull origin <branchName>
+
+Default : git pull origin master
+If you have just master branch, just git pull should suffice. 
+
+To switch between branches : 
+git checkout <branchName>
+
+To Fork repository : (You can fork any GIT repo for your own purpose, which will create cloned copy under your username)
+Goto any repo in GIT and click “FORK"
+FYI – it is possible to merge back the forked repo with our changes to original repo.
+
+
