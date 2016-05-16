@@ -74,4 +74,8 @@ To Fork repository : (You can fork any GIT repo for your own purpose, which will
 Goto any repo in GIT and click “FORK"
 FYI – it is possible to merge back the forked repo with our changes to original repo.
 
+#Setup GIT Username and Password
+git config --global user.name "Billy Everyteen”
+git config --global user.email "me@here.com”
+
 
