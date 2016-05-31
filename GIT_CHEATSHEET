@@ -78,4 +78,9 @@ FYI – it is possible to merge back the forked repo with our changes to origina
 git config --global user.name "Billy Everyteen”
 git config --global user.email "me@here.com”
 
+##change upstream : 
+git remote set-url upstream git://example.com/NewOriginal.git
+
+##change origin : 
+git remote set-url origin git://example.com/NewOriginal.git
 
