@@ -86,3 +86,18 @@ jar xf jarFileName
 #Extract Tar File Content : 
 tar -vxf tarFileName
  
+Check what processes are running :
+ps
+
+Search all processes related to java : 
+ps -ef | grep 'java'
+
+View contents of a file : 
+
+less fileName
+
+http://linux.about.com/library/cmd/blcmdl1_less.htm
+
+
+
+
