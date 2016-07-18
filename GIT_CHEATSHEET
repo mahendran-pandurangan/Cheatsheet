@@ -84,3 +84,20 @@ git remote set-url upstream git://example.com/NewOriginal.git
 ##change origin : 
 git remote set-url origin git://example.com/NewOriginal.git
 
+
+
+
+## Tags
+Tags are used for creating stable releases. To create a tag for using with the Git Drupal Repository, first, ensure that you're following the tag naming convention if you're using this tag for making a release. From inside the directory of the project, an example is:
+
+ git tag 7.x-1.0
+Once the tag is created, you need to push the tag up to the master repository. By itself, push doesn't send the tags up, you also need to tell it to include the tags in the push by appending the --tags flag:
+
+git push --tags
+If you don't want to push all your tags, you can also be specific:
+Example:
+
+git push origin tag 7.x-1.0
+To check and confirm remote tags, the command is
+git tag -l
+
