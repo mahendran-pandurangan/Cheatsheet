@@ -61,6 +61,10 @@ git push origin <branchName>
 Default : git push origin master
 If you have just master branch, just git push should suffice. 
 
+To add remote upstream or origin
+git remote add upstream <repo.git>
+git remote add origin <repo.git>
+
 To checkout from GIT (Before pushing the code into GIT repo, its a standard practice to always run this command first, following by commit and push): 
 git pull origin <branchName>
 
