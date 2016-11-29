@@ -65,43 +65,13 @@ http://gatling.io/docs/2.0.0-RC2/general/simulation_setup.html#simulation-setup
 
 
     val homePage = scenario("Simulate HomePage").exec(http("home").get("/"))    
-    val ctrlPage = scenario("Simulate Control Page").exec(http("ctrl").get("/ctrl"))   
-    val pricingPage = scenario("Simulate Pricing Page").exec(http("pricing").get("/pricing"))  
-    val oaPage = scenario("Simulate OA Page").exec(http("OA").get("/oa/promos/limited-time-offer-sign-in/"))  
-    val accReportsPage = scenario("Simulate Accounting Reports Page").exec(http("OA").get("/accounting-reports/"))     
-    val businessStartUpPage = scenario("Simulate Business Startup Page").exec(http("OA").get("/business-type/starting-up/"))      
-    val payrollServicePage = scenario("Simulate Payroll Service Page").exec(http("OA").get("/payroll-service/"))      
-    val qbdtPremierPage = scenario("Simulate QBDT Premier Page").exec(http("OA").get("/premier/"))     
-    val qbAccountantPage = scenario("Simulate QB Accountant Page").exec(http("OA").get("/accountants/quickbooks-accountant/"))  
-    val nonProfitPage = scenario("Simulate Business Non Profit Page").exec(http("OA").get("/business-type/non-profit/"))  
-    val onlinePage = scenario("Simulate Online Page").exec(http("OA").get("/online/"))      
-    val clientDiscountsPage = scenario("Simulate Accountants Client Discounts Page").exec(http("OA").get("/accountants/client-discounts/"))      
-    val prodAdvisorPage = scenario("Simulate Pro-Advisor Page").exec(http("OA").get("/start/proadvisor_signup/"))      
-    val onlineComparePage = scenario("Simulate Online Compare Page").exec(http("OA").get("/online/compare/"))      
-    val intuitAccountantsPage = scenario("Simulate Intuit Accountants Page").exec(http("OA").get("/accountants/intuitaccountants/"))      
-    val productsPage = scenario("Simulate Products Page").exec(http("OA").get("/products/"))     
-    val accountantsPage = scenario("Simulate Accountants Page").exec(http("OA").get("/accountants/"))     
-    val searchPage = scenario("Simulate Search Page").exec(http("OA").get("/search/"))     
+    val imagesPage = scenario("Simulate Images Page").exec(http("ctrl").get("/images"))   
+   
       
     
      setUp(
          homePage.inject(rampUsersPerSec(2) to(25) during(30 minutes)).protocols(httpConf),
          ctrlPage.inject(rampUsersPerSec(1) to(5) during(30 minutes)).protocols(httpConf),
-         pricingPage.inject(rampUsersPerSec(1) to(3) during(30 minutes)).protocols(httpConf),
-         oaPage.inject(rampUsersPerSec(1) to(3) during(30 minutes)).protocols(httpConf),
-         accReportsPage.inject(rampUsersPerSec(1) to(1) during(30 minutes)).protocols(httpConf),
-         businessStartUpPage.inject(rampUsersPerSec(1) to(1) during(30 minutes)).protocols(httpConf),
-         payrollServicePage.inject(rampUsersPerSec(1) to(1) during(30 minutes)).protocols(httpConf),
-         qbdtPremierPage.inject(rampUsersPerSec(1) to(1) during(30 minutes)).protocols(httpConf),
-         qbAccountantPage.inject(rampUsersPerSec(1) to(1) during(30 minutes)).protocols(httpConf),
-         nonProfitPage.inject(rampUsersPerSec(1) to(1) during(30 minutes)).protocols(httpConf),
-         onlinePage.inject(rampUsersPerSec(1) to(1) during(30 minutes)).protocols(httpConf),
-         clientDiscountsPage.inject(rampUsersPerSec(1) to(1) during(30 minutes)).protocols(httpConf),
-         prodAdvisorPage.inject(rampUsersPerSec(1) to(1) during(30 minutes)).protocols(httpConf),
-         onlineComparePage.inject(rampUsersPerSec(1) to(1) during(30 minutes)).protocols(httpConf),
-         intuitAccountantsPage.inject(rampUsersPerSec(1) to(1) during(30 minutes)).protocols(httpConf),
-         productsPage.inject(rampUsersPerSec(1) to(1) during(30 minutes)).protocols(httpConf),
-         accountantsPage.inject(rampUsersPerSec(1) to(1) during(30 minutes)).protocols(httpConf),
-         searchPage.inject(rampUsersPerSec(1) to(1) during(30 minutes)).protocols(httpConf) 
+        
          )
   }
