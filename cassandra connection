@@ -1,0 +1,17 @@
+    com.datastax.driver.core.PreparedStatement obj = session
+        .prepare("CQL query");
+    ArrayList<Integer> expObj = new ArrayList<Integer>();
+
+    BoundStatement bs = getGroups
+        .bind(param1, param2);
+    List<Row> row = session.execute(bs).all();
+
+    // To convert each Row data to Integer and adding to a arraylist
+    for (Row s : row) {
+      expObj.add(Integer.parseInt(s.getString(0)));
+    }
+
+    // To convert Arraylist to Integer array (used for json response comparison
+    Integer[] cassandraDB =
+        (Integer[]) expObj.toArray(new Integer[expObj.size()]);
+    return cassandraDB;
