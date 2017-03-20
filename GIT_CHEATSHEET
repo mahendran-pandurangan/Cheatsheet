@@ -90,7 +90,6 @@ git remote set-url origin git://example.com/NewOriginal.git
 
 
 
-
 ## Tags
 Tags are used for creating stable releases. To create a tag for using with the Git Drupal Repository, first, ensure that you're following the tag naming convention if you're using this tag for making a release. From inside the directory of the project, an example is:
 
@@ -119,6 +118,12 @@ git add <fileName>
 git commit -m "Commit Message"
 6) Push the changes to Forked repo, which is origin. 
 git push branchName origin
+
+To look up the git configuration : 
+git config --list
+
+To look up global configuration : 
+git config --global --list
 
 
 
