@@ -105,3 +105,20 @@ git push origin tag 7.x-1.0
 To check and confirm remote tags, the command is
 git tag -l
 
+### How to merge the changes from the main repo, when you have changes in forked repository : 
+1) Add upstream (main repo) by using the following command : 
+  git remote add upstream <gitLink>
+2) Check if the upstream is been added by using this command : 
+git remote -v
+It should give the origin as your forked repo url, and upstream as your main repo.
+3) Pull from upstream with branch name using this command : 
+git pull upstream master
+4) Add the files
+git add <fileName>
+5) Commit the changes
+git commit -m "Commit Message"
+6) Push the changes to Forked repo, which is origin. 
+git push branchName origin
+
+
+
