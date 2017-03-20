@@ -125,5 +125,15 @@ git config --list
 To look up global configuration : 
 git config --global --list
 
+# see the commits by the author "Lars Vogel"
+git shortlog --author="Lars Vogel"
+
+# see the commits by the author "Lars Vogel"
+# restricted by the last years
+git shortlog --author="Lars Vogel" --since=2years
+
+# see the number of commits by the author "Lars Vogel"
+git shortlog -s --author="Lars Vogel" --since=2years
+
 
 
