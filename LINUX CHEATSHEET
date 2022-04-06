@@ -62,7 +62,7 @@ grep -rl 'searchKeyword' filename > NewFileName.log
  
 ##Secure Copy Commands
 #Secure Copy from server to local : (CDC-MAIN TO LOCAL)
-scp jbalakr@cdc-main-client00.bfd.walmart.com:/home/filename.log .
+scp j@cloudname.com:/home/filename.log .
  
 #Secure Copy from server to local : (IP to LOCAL)
 scp userName@10.xx.xx.xx:/fileName .
@@ -94,6 +94,8 @@ ps -ef | grep 'java'
 
 View contents of a file : 
 
+
+
 less fileName
 
 http://linux.about.com/library/cmd/blcmdl1_less.htm
@@ -104,13 +106,13 @@ http://linux.about.com/library/cmd/blcmdl1_less.htm
 put this into bash_profile
 
 cat: bash_profile: No such file or directory
-MTVL1391ef44f:AutoLib mpandurangan$ cat ~/.bash_profile
+mpandu$ cat ~/.bash_profile
 export JAVA_HOME=$(/usr/libexec/java_home)
-export M2_HOME=/Users/mpandurangan/Documents/mac_software/apache-maven-3.3.9
-export PATH=/Library/Java/JavaVirtualMachines/1.8.0_60.jdk/Contents/Home/bin:/Users/mpandurangan/Documents/mac_software/apache-maven-3.3.9/bin:/Users/mpandurangan/Downloads/chromedriver:/Users/mpandurangan/Downloads/chromedriver:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-export PATH=$PATH:/usr/local/share/npm/bin/:/Users/mpandurangan/Documents/mac_software/apache-tomcat-8.0.28/bin
-export CATALINA_HOME=/Users/mpandurangan/Documents/mac_software/apache-tomcat-8.0.28
-export ANDROID_HOME=/Users/mpandurangan/Documents/android-sdk-macosx
+export M2_HOME=/Users/mpandu/Documents/mac_software/apache-maven-3.3.9
+export PATH=/Library/Java/JavaVirtualMachines/1.8.0_60.jdk/Contents/Home/bin:/Users/mpandu/Documents/mac_software/apache-maven-3.3.9/bin:/Users/mpandu/Downloads/chromedriver:/Users/mpandu/Downloads/chromedriver:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+export PATH=$PATH:/usr/local/share/npm/bin/:/Users/mpandu/Documents/mac_software/apache-tomcat-8.0.28/bin
+export CATALINA_HOME=/Users/mpandu/Documents/mac_software/apache-tomcat-8.0.28
+export ANDROID_HOME=/Users/mpandu/Documents/android-sdk-macosx
 export ANDROID_SDK=$ANDROID_HOME
 export GITHUB_TOKEN=3c30bbd3a037756e6988d9883b08d3365ffd3148
 # Setting PATH for Python 3.5
@@ -132,5 +134,5 @@ PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
 export PATH
 -----------------------------------------------------------------------------------------------------
 
-/Library/Frameworks/Python.framework/Versions/3.4/bin:/Library/Frameworks/Python.framework/Versions/3.4/bin:/Library/Frameworks/Python.framework/Versions/3.5/bin:/Library/Java/JavaVirtualMachines/1.8.0_60.jdk/Contents/Home/bin:/Users/mpandurangan/Documents/mac_software/apache-maven-3.3.9/bin:/Users/mpandurangan/Downloads/chromedriver:/Users/mpandurangan/Downloads/chromedriver:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/share/npm/bin/:/Users/mpandurangan/Documents/mac_software/apache-tomcat-8.0.28/bin:/Users/mpandurangan/Documents/android-sdk-macosx/build-tools:/Users/mpandurangan/Documents/android-sdk-macosx/tools:/Users/mpandurangan/Documents/android-sdk-macosx/platform-tools
+/Library/Frameworks/Python.framework/Versions/3.4/bin:/Library/Frameworks/Python.framework/Versions/3.4/bin:/Library/Frameworks/Python.framework/Versions/3.5/bin:/Library/Java/JavaVirtualMachines/1.8.0_60.jdk/Contents/Home/bin:/Users/mpandu/Documents/mac_software/apache-maven-3.3.9/bin:/Users/mpandu/Downloads/chromedriver:/Users/mpandu/Downloads/chromedriver:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/share/npm/bin/:/Users/mpandu/Documents/mac_software/apache-tomcat-8.0.28/bin:/Users/mpandu/Documents/android-sdk-macosx/build-tools:/Users/mpandu/Documents/android-sdk-macosx/tools:/Users/mpandu/Documents/android-sdk-macosx/platform-tools
 
