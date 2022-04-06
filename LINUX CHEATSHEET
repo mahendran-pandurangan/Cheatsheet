@@ -1,6 +1,6 @@
 
 #To get log between time frames : 
-grep '2016-01-27 17:\|2016-01-27 18' ship-methods-read-service.log
+grep '2016-01-27 17:\|2016-01-27 18' filename.log
 
 #Get count of search keyword from a file : 
 grep -c 'searchKeyword' fileName.log
